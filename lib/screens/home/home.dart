@@ -10,15 +10,25 @@ class Home extends StatelessWidget {
         title: Text("Hello darkness"),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          ImageBanner('assets/images/csec.jpg'),
-          TextSection(Colors.red),
-          TextSection(Colors.green),
-          TextSection(Colors.blue),
-        ],
-      ),
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            ImageBanner('assets/images/csec.jpg'),
+            TextSection("Colors.red",
+                "GishaGishaGishaGishaGishaGishaGishaGishaGishaGishaGishaGishaGishaGishaGishaGisha"),
+            TextSection("Colors.gr", "Gisha"),
+            TextSection("Colors.bl", "Gisha"),
+          ]),
+      // child: Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      //   crossAxisAlignment: CrossAxisAlignment.stretch,
+      //   children: [
+      //     ImageBanner('assets/images/csec.jpg'),
+      //     TextSection(Colors.red),
+      //     TextSection(Colors.green),
+      //     TextSection(Colors.blue),
+      //   ],
+      // ),
     );
   }
 }
